@@ -21,7 +21,7 @@ public actor ChannelData<T: Sendable> : Sendable{
         self.valid = true
     }
     
-    func getData() async -> T {
+    public func getData() async -> T {
         return data
     }
 
